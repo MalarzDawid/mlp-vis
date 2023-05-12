@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "mlp-vis"
+version = "0.1.0"
+description = ""
+authors = ["MalarzDawid <github@dawidmalarz.pl>"]
+readme = "README.md"
+packages = [{include = "mlp_vis"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+torch = "^2.0.0"
+torchvision = "^0.15.1"
+matplotlib = "^3.7.1"
+ipykernel = "^6.22.0"
+opencv-python = "^4.7.0.72"
+numpy = "^1.24.3"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+isort = "^5.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
